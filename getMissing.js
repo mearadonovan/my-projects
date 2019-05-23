@@ -1,7 +1,7 @@
 let data = require('./deviceData.js');
 let deviceNames = require('./deviceNames.js');
-var fs = require('fs-extra');
 var LineByLineReader = require('line-by-line');
+var fs = require('fs-extra');
 const path = require('path');
 const _ = require('lodash');
 
@@ -31,7 +31,7 @@ function missing() {
             readFile(storeRegex, path.resolve(inputDir, filename), type, path.resolve(archiveDir, filename));
         }
     }
-    console.log('done getting device info');
+    console.log('Done getting device info');
 }
 
 function readFile(storeRegex, filepath, type, archivePath) {
